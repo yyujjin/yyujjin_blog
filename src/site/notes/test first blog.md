@@ -3,4 +3,6 @@
 ---
 
 테스트 용임 
-[[test first blog\|test first blog]]
+[[test test 2\|test test 2]]
+
+
