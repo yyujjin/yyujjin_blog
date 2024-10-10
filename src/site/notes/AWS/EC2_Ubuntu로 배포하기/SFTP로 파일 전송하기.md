@@ -10,11 +10,10 @@
 
 ### sftp 연결하기
 1. 인스턴스 우클릭-> connect
-
-![1.png](/img/user/images/1.png)
+	![1.png](/img/user/images/1.png)
 
 2. Example 복사 
-![2.png](/img/user/images/2.png)
+	![2.png](/img/user/images/2.png)
 3. 터미널에 접속해서  pem키가 있는 폴더로 이동
 4. `ssh` 부분을 `sftp`로 변경
 5. `put`  전송할 파일을 드래그해서 놓기
