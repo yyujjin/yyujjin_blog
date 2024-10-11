@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/ec-2-ubuntu/sftp/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/aws/ec-2-ubuntu/sftp/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
