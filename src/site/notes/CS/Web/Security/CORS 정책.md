@@ -3,22 +3,22 @@
 ---
 
 
-###  CORS가 뭘까?
+##  CORS가 뭘까?
 
 - CORS(Cross-Origin Resource Sharing)는 출처가 다른 자원들을 공유한다는 뜻으로 한 출처에 있는 자원에서 ==다른 출처에 있는 자원에 접근==하도록 하는 개념을 말한다. 
 - ==HTTP 헤더==를 사용하여, 한 출처에서 실행 중인 웹 애플리케이션이 다른 출처의 선택한 자원에 접근할 수 있는 ==권한을 부여==하도록 브라우저에 알려주는 체제이다.
 
 
-### 출처란?
+## 출처란?
 
 ![Pasted image 20241011144754.png](/img/user/images/Pasted%20image%2020241011144754.png)
-https://beomy.github.io/tech/browser/cors/
+사진 출처 : https://beomy.github.io/tech/browser/cors/
 
 
 **위의 구성요소 중에서 Protocol + Host + Port 3가지가 같으면 동일 출처(Origin)라고 한다.**
 
 
-### CORS 정책이 없을 경우 생기는 문제
+## CORS 정책이 없을 경우 생기는 문제
 
  *예시 : 사용자 계좌에서 무단 이체*
 
@@ -36,7 +36,7 @@ https://beomy.github.io/tech/browser/cors/
 
 
 
-###  동일 출처 정책(Same-Origin Policy)
+##  동일 출처 정책(Same-Origin Policy)
 
 - 기본적으로 브라우저에서 보안상의 이유로 동일 출처 정책(Same-Origin Policy)을 적용하여, ==브라우저가 다른 출처의 요청을 자동으로 차단==한다.
 - 이 설정을 변경하려면 서버에서 CORS 정책을 *명시적으로 허용*해주어야 한다.
@@ -44,7 +44,7 @@ https://beomy.github.io/tech/browser/cors/
 
 
 
-### CORS 허용 설정 방법 3가지
+## CORS 허용 설정 방법 3가지
 
 1. **응답 헤더를 통해 허용 설정** (서버 측에서 `Access-Control-Allow-Origin` 등 설정)
 2. **프로그래밍 언어 또는 프레임워크에서 CORS 설정** (Java Spring, Express.js, Django 등)
@@ -53,3 +53,8 @@ https://beomy.github.io/tech/browser/cors/
 이 3가지중 나는 첫 번째 방법을 적용시켜보았다.
 
 👉 [[JAVA/Security/CORS 허용하기\|CORS 허용하기]]
+
+
+
+
+참고 사이트 : https://escapefromcoding.tistory.com/724
