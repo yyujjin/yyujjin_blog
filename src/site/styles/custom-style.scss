@@ -2,12 +2,27 @@ body {
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-      background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    ***/
+
+    background-color: white; /* 배경 흰색 */
+    color: black; /* 텍스트 색상 블랙 */
+}
+
+.sidebar {
+    background-color: rgb(255, 209, 228); /* 연분홍 사이드바 */
+    color: black; /* 사이드바 텍스트 색상 */
+    padding: 20px; /* 사이드바 내부 여백 */
+}
+
+.content {
+    background-color: white; /* 콘텐츠 배경 흰색 */
+    color: black; /* 콘텐츠 텍스트 색상 */
+}
+
+h1 {
+    color: black; /* h1 텍스트 블랙 */
+}
+
+h2 {
+    color: #f48fb1; /* 핑크 계열 색상 */
 }
