@@ -48,10 +48,6 @@ background-color:rgb(255, 209, 228);
   color: rgb(255, 209, 228);
 }/* 왼쪽 사이드 바 */
 
-.sidebar{ 
+.sidebar * {
   background-color:rgb(255, 209, 228);
-}/* 오른쪽 사이드 바 */
-
-.sidebar-container{
-  background-color:rgb(255, 209, 228);
-}/* 오른쪽 사이드 바 */
+}/* 오른쪽 그래프 */
