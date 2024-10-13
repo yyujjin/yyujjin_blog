@@ -10,25 +10,29 @@
 
 #### 프로젝트에 `Dockerfile`을 생성한다.
 	![Pasted image 20241013133625.png](/img/user/images/Pasted%20image%2020241013133625.png)
-#### 코드 작성하기
-	```java
-	FROM openjdk:17-alpine
-	CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"]
-	```
+#### 코드 작성하기 
+```java
+FROM openjdk:17-alpine
+CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"]
+```
 
-	`FROM` : 도커 이미지의 ==**기본 이미지**==를 설정하는 명령어
-	-  java17을 사용하겠다.
-	- 도커에서도 **컨테이너 안에서 실행될 운영체제**를 설정해줘야 한다.  그래서 `alpine`은 컨테이너가 ==**Alpine 리눅스**==라는 매우 가벼운 리눅스 운영체제 위에서 동작하도록 설정하겠다는 뜻이다.
-	*즉, Java 17 환경을 제공하는 Alpine 리눅스 이미지를 기반으로 하겠다는 의미*
+##### `FROM` : 도커 이미지의 ==기본 이미지==를 설정하는 명령어
+`openjdk:17`
+- java17을 사용하겠다.
+`alpine`
+- 도커에서도 **컨테이너 안에서 실행될 운영체제**를 설정해줘야 한다. 
+- 그래서 `alpine`은 컨테이너가 ==**Alpine 리눅스**==라는 매우 가벼운 리눅스 운영체제 위에서 동작하도록 설정하겠다는 뜻이다.
 
-	**`CMD`**: 컨테이너가 시작될 때 ==**실행할 기본 명령어**==를 설정
-	- `["java", "-jar", "/build/libs/demo-0.0.1-SNAPSHOT.jar"]`: 이 명령어는 컨테이너가 실행될 때 **Java 애플리케이션**을 실행하겠다는 의미
-	    
-	- **`java`**: Java 실행 명령어. 도커 이미지의 OpenJDK 환경에서 Java 애플리케이션을 실행한다.
-	    
-	- **`-jar`**: Java 실행 옵션으로, 특정 **JAR 파일**을 실행하겠다는 뜻
-	    
-	- **`/build/libs/demo-0.0.1-SNAPSHOT.jar`**: 실행할 **JAR 파일**의 경로를 나타냄.
+**즉, Java 17 환경을 제공하는 Alpine 리눅스 이미지를 기반으로 하겠다는 의미**
+
+**`CMD`**: 컨테이너가 시작될 때 ==**실행할 기본 명령어**==를 설정
+- `["java", "-jar", "/build/libs/demo-0.0.1-SNAPSHOT.jar"]`: 이 명령어는 컨테이너가 실행될 때 **Java 애플리케이션**을 실행하겠다는 의미
+	
+- **`java`**: Java 실행 명령어. 도커 이미지의 OpenJDK 환경에서 Java 애플리케이션을 실행한다.
+	
+- **`-jar`**: Java 실행 옵션으로, 특정 **JAR 파일**을 실행하겠다는 뜻
+	
+- **`/build/libs/demo-0.0.1-SNAPSHOT.jar`**: 실행할 **JAR 파일**의 경로를 나타냄.
 	    
 	
 	즉, `/build/libs/demo-0.0.1-SNAPSHOT.jar`라는 이름의 JAR 파일을 실행하여 Java 애플리케이션을 시작하라"는 의미
