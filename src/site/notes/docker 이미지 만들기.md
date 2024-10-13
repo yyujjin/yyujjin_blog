@@ -9,7 +9,7 @@
 ## 만드는 방법
 
 #### 1. 프로젝트에 `Dockerfile` 생성하기
-
+	![Pasted image 20241013133625.png](/img/user/images/Pasted%20image%2020241013133625.png)
 #### 2. 코드 작성하기 
 ```java
 FROM openjdk:17-alpine
@@ -68,10 +68,3 @@ Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
 
 COPY ./build/libs/demo-0.0.1-SNAPSHOT.jar /build/libs/demo-0.0.1-SNAPSHOT.jar
 ```
-
-
-- `Dockerfile`에 위 명령어를 추가로 작성한다.
-- 빌드한 jar 파일을 COPY 명령어를 사용해서  Docker 컨테이너 내부로 옮겨주는 코드이다.
-- 두 위치가 동일해보이지만 그렇지 않다.
-- 도커에서는 **호스트 파일 시스템(컨테이너 외부)**과 **컨테이너 내부 파일 시스템**이 분리되어 있기 때문에, 경로가 같아 보이더라도 실제로는 **서로 다른 공간**임
-- 이후 다시 빌드 명령어 실행하면 됨.
