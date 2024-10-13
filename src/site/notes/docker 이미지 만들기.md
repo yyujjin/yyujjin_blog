@@ -69,6 +69,7 @@ Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
 COPY ./build/libs/demo-0.0.1-SNAPSHOT.jar /build/libs/demo-0.0.1-SNAPSHOT.jar
 ```
 
+
 - `Dockerfile`에 위 명령어를 추가로 작성한다.
 - 빌드한 jar 파일을 COPY 명령어를 사용해서  Docker 컨테이너 내부로 옮겨주는 코드이다.
 - 두 위치가 동일해보이지만 그렇지 않다.
