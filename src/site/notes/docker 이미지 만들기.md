@@ -51,6 +51,6 @@
 		⚠️ 에러 발생
 		```shell
 		park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
-	Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
+		Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
 		```
 		-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
