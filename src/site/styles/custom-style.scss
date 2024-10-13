@@ -13,9 +13,13 @@ body {
     color: black; /* 콘텐츠 텍스트 색상 */
 }
 
+.filetree-sidebar{
+    background-color:rgb(255, 209, 228);
+}/* 왼쪽 사이드 바 */
+
 .navbar {
      background-color:rgb(255, 209, 228);
-}
+}/* 반응형때 핑크 */
 
 h1 {
     color: black; /* h1 텍스트 블랙 */
