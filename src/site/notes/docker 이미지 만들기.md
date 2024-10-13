@@ -47,22 +47,21 @@ CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"]
 
 #### 4. 실행시키기
 
-	- 빌드된 이미지는 도커가 관리하는 로컬 시스템의 이미지 저장소에 저장되어있기 때문에 해당 명령어를 실행하는 위치는 아무데서나 해도 상관없다. 
-		```shell
-		docker run springbootapp
-		```
-		⚠️ 에러 발생
-		```shell
-		park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
-		Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
-		```
-		-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
-		- 왜 발생하나?
-			- 새롭게 만들었던 폴더나 파일들은 컨테이너 내부가 아닌 **외부**에 존재합니다.
+```shell
+docker run springbootapp
+	```
 
-			-  따라서 컨테이너 내부에는 빌드한 jar 파일이 없으며, 따라서 jar 파일을 찾을 수 없다는 오류가 발생합니다.
+==⚠️ 에러 발생==
+```shell
+park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
+Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
+```
+-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
+- 왜 발생하나?
+	- 새롭게 만들었던 폴더나 파일들은 컨테이너 내부가 아닌 **외부**에 존재함
 
-```
+	-  따라서 **컨테이너 내부에는 빌드한 jar 파일이 없어서**  jar 파일을 찾을 수 없다는 오류가 발생함
+
 
 ```shell
 두 위치가 동일하다는 의미가 아닙니다. 도커에서는 **호스트 파일 시스템(컨테이너 외부)**과 **컨테이너 내부 파일 시스템**이 분리되어 있기 때문에, 경로가 같아 보이더라도 실제로는 서로 다른 공간입니다.
