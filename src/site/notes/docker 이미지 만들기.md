@@ -3,14 +3,14 @@
 ---
 
 
-### 이미지란?
+## 이미지란?
 **도커 이미지**는 **소프트웨어 실행 환경**을 담고 있는 ==설치 패키지== 같은 개념
 
-### 만드는 방법
+## 만드는 방법
 
-1. 프로젝트에 `Dockerfile`을 생성한다.
+#### 프로젝트에 `Dockerfile`을 생성한다.
 	![Pasted image 20241013133625.png](/img/user/images/Pasted%20image%2020241013133625.png)
-2.  코드 작성하기
+#### 코드 작성하기
 	```java
 	FROM openjdk:17-alpine
 	CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"]
