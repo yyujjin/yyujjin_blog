@@ -37,8 +37,8 @@ background-color:rgb(255, 209, 228);
 }
 
 .notelink.active-note{
-  background-color:rgb(255, 209, 228);
-}
+  background-color:white; 
+} /* 왼쪽 사이드 바 */
 .notelink.active-note a {
-  color: white;
-}
+  color: rgb(255, 209, 228);
+}/* 왼쪽 사이드 바 */
