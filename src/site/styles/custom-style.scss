@@ -54,3 +54,7 @@ background-color:rgb(255, 209, 228);
 .sidebar * {
   background-color:rgb(255, 209, 228);
 }/* 오른쪽 그래프 */
+
+code[class*=language-], pre[class*=language-] {
+  color:black;
+}
