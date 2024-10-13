@@ -9,7 +9,7 @@
 ## 만드는 방법
 
 #### 1. 프로젝트에 `Dockerfile` 생성하기
-	![Pasted image 20241013133625.png](/img/user/images/Pasted%20image%2020241013133625.png)
+
 #### 2. 코드 작성하기 
 ```java
 FROM openjdk:17-alpine
