@@ -54,3 +54,93 @@
 		Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
 		```
 		-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
+		- 왜 발생하나?
+			- 새롭게 만들었던 폴더나 파일들은 컨테이너 내부가 아닌 **외부**에 존재합니다.
+
+			-  따라서 컨테이너 내부에는 빌드한 jar 파일이 없으며, 따라서 jar 파일을 찾을 수 없다는 오류가 발생합니다.
+
+```
+
+```shell
+두 위치가 동일하다는 의미가 아닙니다. 도커에서는 **호스트 파일 시스템(컨테이너 외부)**과 **컨테이너 내부 파일 시스템**이 분리되어 있기 때문에, 경로가 같아 보이더라도 실제로는 서로 다른 공간입니다.
+
+COPY [호스트 경로] [컨테이너 내부 경로]
+
+**COPY** **./build/libs/demo-0.0.1-SNAPSHOT.jar** **/build/libs/demo-0.0.1-SNAPSHOT.jar**
+
+```
+
+- **Dockerfile**에 `COPY` 명령어를 작성합니다.
+- 그 후 **`docker build`** 명령어로 이미지를 빌드할 때, `COPY` 명령어가 실행되어 파일이 복사됩니다.
+- 1. **`COPY` 경로**: `COPY` 명령에서 **첫 번째 경로**는 **호스트 시스템(로컬 컴퓨터)**의 파일을 가리키고, **두 번째 경로**는 **컨테이너 내부**의 복사될 경로를 지정합니다. 보통 `COPY`의 첫 번째 경로는 상대 경로로 작성해야 합니다.
+    
+2. 컨테이너 내부 경로를 관리하기 위해 적절한 경로를 사용하는 것이 좋습니다. 예를 들어, `/app` 같은 디렉토리를 만들어서 사용하면 더 명확합니다.
+    
+
+### 수정된 Dockerfile:
+
+Dockerfile
+
+Copy code
+
+`FROM openjdk:17-alpine WORKDIR /app COPY ./build/libs/bookrating-0.0.1-SNAPSHOT.jar /app/bookrating.jar CMD ["java", "-jar", "/app/bookrating.jar"]`
+
+### 설명:
+
+1. **`WORKDIR /app`**: 컨테이너 내부에서 기본 작업 디렉토리로 `/app` 디렉토리를 설정합니다. 이후 명령어들은 기본적으로 `/app` 디렉토리에서 실행됩니다.
+2. **`COPY ./build/libs/bookrating-0.0.1-SNAPSHOT.jar /app/bookrating.jar`**: 호스트 시스템의 `./build/libs/bookrating-0.0.1-SNAPSHOT.jar` 파일을 컨테이너 내부의 `/app/bookrating.jar`로 복사합니다.
+3. **`CMD ["java", "-jar", "/app/bookrating.jar"]`**: 복사한 `bookrating.jar` 파일을 **Java**로 실행합니다.
+
+### 올바른 빌드 및 실행 절차:
+
+1. **Dockerfile**이 있는 디렉토리에서 터미널을 열고, 다음 명령어를 실행합니다:
+    
+    bash
+    
+    Copy code
+    
+    `docker build . -t bookratingapp`
+    
+    이 명령어는 **Dockerfile**을 사용하여 이미지를 빌드하고, `bookratingapp`이라는 이름으로 태그를 달게 됩니다.
+    
+2. 이미지가 빌드된 후, 다음 명령어로 컨테이너를 실행합니다:
+    
+    bash
+    
+    Copy code
+    
+    `docker run bookratingapp`
+    
+
+### 요약:
+
+- **첫 번째 경로**는 **호스트 시스템**에서 복사할 파일의 경로입니다.
+- **두 번째 경로**는 **컨테이너 내부**에 복사될 위치입니다.
+- 위와 같이 작성하면 JAR 파일이 컨테이너 내에서 제대로 복사되고, Java로 실행됩니다.
+
+
+
+
+
+
+- **이미지 이름 확인**:
+    
+    - `docker run` 명령어에서 사용한 이미지 이름 **`book_rating_backend`**가 올바르게 빌드된 이미지의 이름과 일치해야 합니다.
+    - 빌드된 이미지의 이름을 확인하려면 다음 명령어로 로컬에 있는 이미지 목록을 확인할 수 있습니다:
+        
+        bash
+        
+        Copy code
+        
+        `docker images`
+        
+        목록에 **`book_rating_backend`**가 포함되어 있는지 확인하고, 만약 이름이 다르다면 올바른 이름으로 수정해 실행하세요.
+- **이미지 실행**:
+    
+    - 이미지를 빌드한 후, 다시 다음 명령어로 컨테이너를 실행합니다:
+        
+        bash
+        
+        Copy code
+        
+        `docker run book_rating_backend`
