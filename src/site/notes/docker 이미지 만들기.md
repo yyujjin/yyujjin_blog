@@ -49,17 +49,17 @@ CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"]
 
 ```shell
 docker run springbootapp
-	```
+```
 
 ==⚠️ 에러 발생==
 ```shell
 park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
 Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
 ```
--  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
-- 왜 발생하나?
-	- 새롭게 만들었던 폴더나 파일들은 컨테이너 내부가 아닌 **외부**에 존재함
 
+- jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
+-  왜 발생하나?
+	-  새롭게 만들었던 폴더나 파일들은 컨테이너 내부가 아닌 **외부**에 존재함
 	-  따라서 **컨테이너 내부에는 빌드한 jar 파일이 없어서**  jar 파일을 찾을 수 없다는 오류가 발생함
 
 
