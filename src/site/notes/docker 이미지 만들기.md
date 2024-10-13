@@ -45,12 +45,12 @@
 	즉, 빌드하고 내가 지은 이름으로 태그를 달아 저장하겠다!! 라는 의미 
 4. 실행시키기
 	- 빌드된 이미지는 도커가 관리하는 로컬 시스템의 이미지 저장소에 저장되어있기 때문에 해당 명령어를 실행하는 위치는 아무데서나 해도 상관없다. 
-	```shell
-	docker run springbootapp
-	```
-	⚠️ 에러 발생
-	```shell
-	park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
-Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
-	```
-	-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
+		```shell
+		docker run springbootapp
+		```
+		⚠️ 에러 발생
+		```shell
+		park-yujin@bag-yujin-ui-MacBookPro ~ % docker run book-rating-backend
+	Error: Unable to access jarfile /build/libs/bookrating-0.0.1-SNAPSHOT.jar
+		```
+		-  jar 파일의 경로가 잘못되었거나,  존재하지 않는 등의 이유로 jar 파일을 찾을 수 없을 때 발생하는 에러
