@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"noteIcon":"","permalink":"/cs/cs/","dgPassFrontmatter":true}
+{"dg-publish":true,"noteIcon":"../img/dock.png","permalink":"/cs/cs/","dgPassFrontmatter":true}
 ---
 
 
@@ -17,6 +17,3 @@
 - [[CS/네트워크/WebSocket\|WebSocket]]
 
 ###### AWS
-
-
-
