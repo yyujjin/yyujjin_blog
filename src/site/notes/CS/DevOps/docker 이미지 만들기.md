@@ -1,10 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/cs/dev-ops//","noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/dev-ops/docker/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 ## 이미지란?
 
 **도커 이미지**는 **소프트웨어 실행 환경**을 담고 있는 ==설치 패키지== 같은 개념
+
 
 ## 만드는 방법
 
@@ -35,7 +36,7 @@ CMD ["java","-jar","/build/libs/demo-0.0.1-SNAPSHOT.jar"(빌드파일)]
 
 `COPY`
 
-```
+```shell
 //COPY (복사할 파일[컨테이너 외부]) (복사될 위치[컨테이너 내부])
 
 COPY ./build/libs/demo-0.0.1-SNAPSHOT.jar /build/libs/demo-0.0.1-SNAPSHOT.jar
@@ -59,7 +60,7 @@ COPY ./build/libs/demo-0.0.1-SNAPSHOT.jar /build/libs/demo-0.0.1-SNAPSHOT.jar
     
 2. 명령어 입력하기
     
-    ```
+    ```shell
     docker build . -t 이미지이름
     ```
     
