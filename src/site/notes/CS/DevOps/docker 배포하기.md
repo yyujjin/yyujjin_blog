@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/dev-ops/docker/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/dev-ops/docker 배포하기.md/", noteIcon":""}
 ---
 
 
