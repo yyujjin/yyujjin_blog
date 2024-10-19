@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/dev-ops/docker/image","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/dev-ops/docker/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 ## 이미지란?
