@@ -12,7 +12,7 @@
 2. 자원에 대한 행위(Verb) : HTTP Method
 3. 자원에 대한 행위의 내용 (Representations) : HTTP Message Pay Load
 
-######  예시: 블로그 포스트 관리 시스템
+####  예시: 블로그 포스트 관리 시스템
 
 1. **자원(Resource)**: `HTTP URI`
     
@@ -44,7 +44,7 @@
     - 데이터 조회 시 사용
 - `POST`
     - 새로운 정보를 추가하는데 사용
-- `PUT
+- `PUT`
     - 정보를 통째로 변경할 때 사용
 - `PATCH`
     - 정보 중 일부를 특정 방식으로 변경할 때 사용
