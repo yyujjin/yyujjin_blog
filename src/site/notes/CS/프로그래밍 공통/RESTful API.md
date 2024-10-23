@@ -2,148 +2,68 @@
 {"dg-publish":true,"permalink":"/cs//res-tful-api/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
-# 📌 REST 란?
+## REST(Representational State Transfer)란?
 
----
+- 자원의 상태를 주고받는 모든 것을 의미함
 
-- REST(Representational State Transfer)의 약자로 자원을 이름으로 구분하여 해당 자원의 상태를 주고받는 모든 것을 의미합니다.
+### REST 구성 요소
 
-1. HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고,
-2. HTTP Method(POST, GET, PUT, DELETE, PATCH 등)를 통해해당 자원(URI)에 대한 **CRUD Operation**을 적용하는 것을 의미합니다.
+1. 자원(Resource) : HTTP URI
+2. 자원에 대한 행위(Verb) : HTTP Method
+3. 자원에 대한 행위의 내용 (Representations) : HTTP Message Pay Load
 
-<aside> 🔎 CRUD Operation이란?
+######  예시: 블로그 포스트 관리 시스템
 
-CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create(생성), Read(읽기), Update(갱신), Delete(삭제)를 묶어서 일컫는 말로
+1. **자원(Resource)**: `HTTP URI`
+    
+    - 자원은 블로그 시스템에서 관리되는 항목, 예를 들어 **블로그 글**을 나타냅니다.
+    - **예시**: `http://example.com/posts`
+2. **자원에 대한 행위(Verb)**: `HTTP Method`
+    
+    - 자원에 대해 수행할 수 있는 동작입니다. HTTP Method로 표현됩니다.
+    - **예시**:
+        - `GET /posts` : 모든 블로그 글을 조회
+        - `POST /posts` : 새로운 블로그 글을 생성
+        - `PUT /posts/1` : ID가 1인 블로그 글을 수정
+        - `DELETE /posts/1` : ID가 1인 블로그 글을 삭제
+3. **자원에 대한 행위의 내용(Representations)**: `HTTP Message Pay Load`
+    
+    - 행위의 결과로 전송되는 데이터입니다. 주로 JSON이나 XML 형식으로 자원을 표현합니다.
+    - **예시**:`POST`로 새로운 블로그 글을 생성할 때의 요청 본문
+    ```json
+    {
+	     "title": "REST 구성 요소에 대한 설명",
+	      "content": "REST는 자원, 행위, 행위의 내용을 기반으로 설계됩니다."
+	}
+	```
 
-REST에서의 CRUD Operation 동작 예시는 다음과 같다.
+### HTTP Method
 
----
 
-Create : 데이터 생성(POST)
-
-Read : 데이터 조회(GET)
-
-Update : 데이터 수정(PUT, PATCH)
-
-Delete : 데이터 삭제(DELETE)
-
-</aside>
-
-### ✔️ **REST 구성 요소**
-
-1. **자원(Resource) : HTTP URI**
-2. **자원에 대한 행위(Verb) : HTTP Method**
-3. **자원에 대한 행위의 내용 (Representations) : HTTP Message Pay Load**
-
-# 📌 API란?
-
----
-
-- 다른 소프트웨어 시스템과 통신하기 위해 따라야 하는 규칙을 정의합니다.
-- 웹 API는 클라이언트와 웹 리소스 사이의 게이트웨이라고 생각할 수 있습니다.
-
-<aside> 🔎 **리소스란?**
-
-리소스는 다양한 애플리케이션이 **클라이언트에게 제공하는 정보**입니다. 리소스는 이미지, 동영상, 텍스트, 숫자 또는 모든 유형의 데이터일 수 있습니다. 클라이언트에 **리소스를 제공하는 시스템을 서버**라고도 합니다.
-
-</aside>
-
-# 📌 REST API란? (RESTful API)
-
----
-
-- **RESPT API란 REST의 원리를 따르는 API를 의미합니다.**
-
-### ✔️ **REST API 설계 예시**
-
-<aside> 🔎 **1. URI는 동사보다는 명사를, 대문자보다는 소문자를 사용하여야 한다.**
-
-❌**Bad Example [](http://khj93.com/test/)[http://khj93.com/Running/](http://khj93.com/Running/)**
-
-⭕**Good Example  [](http://khj93.com/test/)[http://khj93.com/run/](http://khj93.com/run/)**
-
-</aside>
-
-<aside> 🔎 **2. 마지막에 슬래시 (/)를 포함하지 않는다.**
-
-❌**Bad Example [http://khj93.com/test/**](http://khj93.com/test/**)
-
-⭕**Good Example  [](http://khj93.com/test/)[http://khj93.com/test](http://khj93.com/test)**
-
-</aside>
-
-<aside> 🔎 **3. 언더바 대신 하이폰을 사용한다.**
-
-❌**Bad Example [](http://khj93.com/test/)[http://khj93.com/test_blog](http://khj93.com/test_blog)**
-
-⭕**Good Example  [](http://khj93.com/test/)[http://khj93.com/test-blog](http://khj93.com/test-blog)**
-
-</aside>
-
-<aside> 🔎 **4. 파일확장자는 URI에 포함하지 않는다.**
-
-❌**Bad Example [](http://khj93.com/test/)[http://khj93.com/photo.jpg](http://khj93.com/photo.jpg)**
-
-⭕**Good Example  [](http://khj93.com/test/)[http://khj93.com/photo](http://khj93.com/photo)**
-
-</aside>
-
-<aside> 🔎 **5. 행위를 포함하지 않는다.**
-
-❌**Bad Example [](http://khj93.com/test/)[http://khj93.com/delete-post/1](http://khj93.com/delete-post/1)**
-
-⭕**Good Example  [](http://khj93.com/test/)[http://khj93.com/post/1](http://khj93.com/post/1)**
-
-</aside>
-
-<aside> 🔎 **6. 전달하고자 하는 명사를 사용하되, 컨트롤 자원을 의미하는 경우 예외적으로 동사를 사용한다.**
-
-❌**Bad Example** [http://dev-cool.tistory.com/course/writing](http://dev-cool.tistory.com/course/writing)
-
-⭕**Good Example** [http://dev-cool.tistory.com/course/write](http://dev-cool.tistory.com/course/write)
-
-</aside>
-
-<aside> 🔎 **7. URI에 작성되는 영어를 복수형으로 작성한다.**
-
-⭕**Good Example** [http://api.college.com/students/3248234/courses](http://api.college.com/students/3248234/courses)
-
-</aside>
-
-# 📌 **HTTP Method**
-
----
-
-- _**GET**_
+- `GET`
     - 데이터 조회 시 사용
-- _**POST**_
+- `POST`
     - 새로운 정보를 추가하는데 사용
-- _**PUT**_
+- `PUT
     - 정보를 통째로 변경할 때 사용
-- _**PATCH**_
+- `PATCH`
     - 정보 중 일부를 특정 방식으로 변경할 때 사용
-- _**DELETE**_
+- `DELETE`
     - 데이터 삭제 시 사용
 
-# 📌 **RESTful API 서버 응답** 코드
 
----
+## API(Application Programming Interface)란?
 
-- 1XX : 요청을 성공적으로 받았으며 서버가 해당 작업을 진행 중
-    
-- 2XX : 요청을 성공적으로 받았으며 요청이 이루어짐
-    
-    - 200 : 요청이 성공적으로 처리됨. 가장 흔히 사용
-    - 204 : 요청이 성공적으로 처리되었지만, 답장에 적어 보낼 내용은 없음
-    - 206 : 요청에서 지정한 대로, 일부 콘텐츠만 보냄
-- 4XX : 클라이언트 요청에 문제가 있기 때문에 수행할 수 없음
-    
-    - 401 : Unauthorized - 로그인이 필요한 요청인데 로그인 되어 있지 않음
-    - 403 : Forbidden - 로그인 되어 있지만 요청을 보낼 권한이 없음
-    - 404 : Not Found - 요청에 해당하는 데이터가 없음 또는 URL이 잘못되었을 때 등에 나타남
-- 5XX : 요청에는 문제가 없지만, 서버에 이상이 있어 응답할 수 없음
-    
-    - 500 : 서버 내부에 오류 발생
-    - 502 : 서버 과부하 또는 기타 네트워크 문제로 통신이 제대로 되지 않음
 
-🧐 400대의 오류는 사용자 측, 500 번 대의 오류는 서버 측의 문제
+- 다른 소프트웨어 시스템과 통신하기 위해 따라야 하는 규칙
+	- 소프트웨어란?
+		- 컴퓨터나 다른 기기에서 특정 작업을 수행하거나 기능을 실행하기 위해 작성된 ==프로그램이나 명령어==들을 의미
+- 웹 API는 클라이언트와 웹 리소스 사이의 게이트웨이라고 생각할 수 있음
+
+## REST API란? (RESTful API)
+
+
+- RESPT API란 ==REST의 원리를 따르는 API==를 의미한다.
+
+
+
