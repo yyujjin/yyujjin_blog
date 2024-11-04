@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/cs/운영체제/cpu_스케줄링.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-03T13:24:53.190+09:00","updated":"2024-11-05T04:56:40.959+09:00"}
+{"dg-publish":true,"permalink":"/cs//cpu/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-03T13:24:53.190+09:00","updated":"2024-11-05T05:13:59.742+09:00"}
 ---
 
 
 # ✔️ CPU 스케줄링(CPU scheduling) 이란?
 
-==프로세스들에게 cpu 자원을 배분하는 것을 말함 ==
+==프로세스들에게 cpu 자원을 배분하는 것을 말함==
 
 ## ☑️ 프로세스 종류
 
