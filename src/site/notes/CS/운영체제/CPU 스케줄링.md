@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs//cpu/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-03T13:24:53.190+09:00","updated":"2024-11-05T04:56:40.959+09:00"}
+{"dg-publish":true,"permalink":"/cs/운영체제/cpu_스케줄링.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-03T13:24:53.190+09:00","updated":"2024-11-05T04:56:40.959+09:00"}
 ---
 
 
