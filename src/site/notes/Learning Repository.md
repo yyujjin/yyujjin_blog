@@ -4,11 +4,12 @@
 
 
 **HI!** 
-<img src="/img/user/images/%E2%80%98IMG_9346%E2%80%99%EC%9D%98%20%EB%B0%B0%EA%B2%BD%EC%9D%B4%20%EC%A0%9C%EA%B1%B0%EB%90%A8%202.png" width="300px">
+<img src="/img/user/images/%E2%80%98IMG_9346%E2%80%99%EC%9D%98%20%EB%B0%B0%EA%B2%BD%EC%9D%B4%20%EC%A0%9C%EA%B1%B0%EB%90%A8%202.png" style="width: 300px; height: auto;">
 
 [[CS/CS\|CS]]
 [[Deployments/Deployments\|Deployments]]
 [[Project/Project\|Project]]
+
 
 
 
