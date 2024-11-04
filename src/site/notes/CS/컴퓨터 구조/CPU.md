@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs//cpu/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-20T04:13:28.369+09:00","updated":"2024-11-05T05:24:18.578+09:00"}
+{"dg-publish":true,"permalink":"/cs/컴퓨터_구조/cpu.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-20T04:13:28.369+09:00","updated":"2024-11-05T05:24:18.578+09:00"}
 ---
 
 
