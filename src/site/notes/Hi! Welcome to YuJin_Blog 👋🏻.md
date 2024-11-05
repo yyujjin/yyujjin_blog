@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-05T19:45:01.837+09:00"}
+{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-05T20:03:00.025+09:00"}
 ---
 
   
@@ -56,6 +56,7 @@
 - [[CS/AWS/S3\|S3]]
 
 
+
 # ☑️ Deployment
 ---
 
@@ -71,4 +72,10 @@
 - [[Deployment/EC2/프로젝트 실행하기\|프로젝트 실행하기]]
 - [[Deployment/EC2/SFTP로 파일 전송하기\|SFTP로 파일 전송하기]]
 - [[Deployment/EC2/Swap memory 설정하기\|Swap memory 설정하기]]
-- 
+
+
+
+# ☑️ Projects
+---
+## ▪️ Book_rating_API
+- [[Project/Book_rating_API/Project Log\|Project Log]]
