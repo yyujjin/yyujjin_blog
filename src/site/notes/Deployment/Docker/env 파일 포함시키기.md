@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/deployment/docker/env/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-30T18:08:48.089+09:00","updated":"2024-11-05T19:34:52.994+09:00"}
+{"dg-publish":true,"permalink":"/deployment/docker/env_파일_포함시키기.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-30T18:08:48.089+09:00","updated":"2024-11-05T19:34:52.994+09:00"}
 ---
 
 
