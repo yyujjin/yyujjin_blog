@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/deployment/docker/docker_배포하기/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T22:32:52.408+09:00","updated":"2024-10-30T23:20:24.906+09:00"}
+{"dg-publish":true,"permalink":"/deployment/docker/docker_배포하기.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T22:32:52.408+09:00","updated":"2024-10-30T23:20:24.906+09:00"}
 ---
 
 
