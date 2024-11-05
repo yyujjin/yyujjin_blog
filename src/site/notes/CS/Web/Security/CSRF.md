@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/web/security/csrf/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/web/csrf/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 ## CSRF(Cross-Site Request Forgery)란?
