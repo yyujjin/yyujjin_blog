@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/deployment/docker/network/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-02T03:57:20.648+09:00","updated":"2024-11-05T19:35:14.160+09:00"}
+{"dg-publish":true,"permalink":"/deployment/docker/network_생성하기.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-02T03:57:20.648+09:00","updated":"2024-11-05T19:35:14.160+09:00"}
 ---
 
 
