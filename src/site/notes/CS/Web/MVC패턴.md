@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/java/mvc/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-28T03:29:02.761+09:00","updated":"2024-10-28T04:17:15.083+09:00"}
+{"dg-publish":true,"permalink":"/cs/Web/mvc/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-28T03:29:02.761+09:00","updated":"2024-10-28T04:17:15.083+09:00"}
 ---
 
 ## MVC 패턴이란?
