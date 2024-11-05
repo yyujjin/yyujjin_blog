@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/book-rating-api/project.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-02T05:08:44.733+09:00","updated":"2024-11-05T19:56:48.559+09:00"}
+{"dg-publish":true,"permalink":"/project/book-rating-api/bookrating_log.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-02T05:08:44.733+09:00","updated":"2024-11-05T19:56:48.559+09:00"}
 ---
 
 
