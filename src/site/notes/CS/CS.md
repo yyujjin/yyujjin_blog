@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/cs/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-05T19:16:14.906+09:00","updated":"2024-11-05T19:52:11.453+09:00"}
+{"dg-publish":true,"permalink":"/cs/cs/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-05T19:16:14.906+09:00","updated":"2024-11-06T06:09:05.105+09:00"}
 ---
 
 
@@ -26,6 +26,7 @@
 ## ▪️ 네트워크
 - [[CS/네트워크/HTTP\|HTTP]]
 - [[CS/네트워크/SMTP\|SMTP]]
+- [[CS/네트워크/쿠키,세션,토큰\|쿠키,세션,토큰]]
 - [[CS/네트워크/Webhook(웹훅)\|Webhook(웹훅)]]
 - [[CS/네트워크/WebSocket\|WebSocket]]
 
