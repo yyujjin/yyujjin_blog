@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/deployment/docker/docker/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-02T05:46:34.047+09:00"}
+{"dg-publish":true,"permalink":"/deployment/docker/docker_이미지_만들기/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-02T05:46:34.047+09:00"}
 ---
 
 ## 이미지란?
