@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/deployment/ec-2/sftp/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.058+09:00","updated":"2024-10-15T01:20:33.058+09:00"}
+{"dg-publish":true,"permalink":"/deployment/ec-2/sftp_파일_전송하기.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.058+09:00","updated":"2024-10-15T01:20:33.058+09:00"}
 ---
 
 
