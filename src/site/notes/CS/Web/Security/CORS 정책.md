@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/web/security/cors/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/web/cors/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
