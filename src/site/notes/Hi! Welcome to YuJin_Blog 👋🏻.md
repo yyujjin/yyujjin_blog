@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-05T20:03:00.025+09:00"}
+{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-06T20:15:21.348+09:00"}
 ---
 
   
@@ -27,18 +27,18 @@
 
 ## ▪️ 네트워크
 - [[CS/네트워크/HTTP\|HTTP]]
-- [[CS/네트워크/SMTP\|SMTP]]
+- [[CS/네트워크/쿠키,세션,토큰\|쿠키,세션,토큰]]
+- [[CS/네트워크/JWT\|JWT]]
+- [[CS/네트워크/Access Token과 Refresh Token\|Access Token과 Refresh Token]]
 - [[CS/네트워크/Webhook(웹훅)\|Webhook(웹훅)]]
 - [[CS/네트워크/WebSocket\|WebSocket]]
-
-
-## ▪️ Web
-- [[CS/Web/CORS 정책\|CORS 정책]]
-- [[CS/Web/CSRF\|CSRF]]
-- [[CS/Web/JWT 인가 설정하기\|JWT 인가 설정하기]]
-- [[CS/Web/OAuth2 JWT\|OAuth2 JWT]]
-- [[CS/Web/RESTful API\|RESTful API]]
-- [[CS/Web/MVC패턴\|MVC패턴]]
+- [[CS/네트워크/SMTP\|SMTP]]
+- [[CS/네트워크/CORS 정책\|CORS 정책]]
+- [[CS/네트워크/CSRF\|CSRF]]
+- [[CS/네트워크/JWT 인가 설정하기\|JWT 인가 설정하기]]
+- [[CS/네트워크/OAuth2 JWT\|OAuth2 JWT]]
+- [[CS/네트워크/RESTful API\|RESTful API]]
+- [[CS/네트워크/MVC패턴\|MVC패턴]]
 
 
 ## ▪️ JAVA
