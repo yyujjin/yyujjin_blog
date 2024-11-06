@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/access-token-refresh-token/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-06T19:51:28.490+09:00","updated":"2024-11-06T19:59:19.728+09:00"}
+{"dg-publish":true,"permalink":"/cs/네트워크/access-token-refresh-token/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-06T19:51:28.490+09:00","updated":"2024-11-06T19:59:19.728+09:00"}
 ---
 
 
