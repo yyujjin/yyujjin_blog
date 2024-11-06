@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/cs/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-05T19:16:14.906+09:00","updated":"2024-11-06T06:09:05.105+09:00"}
+{"dg-publish":true,"permalink":"/cs/cs/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-05T19:16:14.906+09:00","updated":"2024-11-06T20:04:54.028+09:00"}
 ---
 
 
@@ -25,19 +25,18 @@
 
 ## ▪️ 네트워크
 - [[CS/네트워크/HTTP\|HTTP]]
-- [[CS/네트워크/SMTP\|SMTP]]
 - [[CS/네트워크/쿠키,세션,토큰\|쿠키,세션,토큰]]
+- [[CS/네트워크/JWT\|JWT]]
+- [[CS/네트워크/Access Token과 Refresh Token\|Access Token과 Refresh Token]]
 - [[CS/네트워크/Webhook(웹훅)\|Webhook(웹훅)]]
 - [[CS/네트워크/WebSocket\|WebSocket]]
-
-
-## ▪️ Web
-- [[CS/Web/CORS 정책\|CORS 정책]]
-- [[CS/Web/CSRF\|CSRF]]
-- [[CS/Web/JWT 인가 설정하기\|JWT 인가 설정하기]]
-- [[CS/Web/OAuth2 JWT\|OAuth2 JWT]]
-- [[CS/Web/RESTful API\|RESTful API]]
-- [[CS/Web/MVC패턴\|MVC패턴]]
+- [[CS/네트워크/SMTP\|SMTP]]
+- [[CS/네트워크/CORS 정책\|CORS 정책]]
+- [[CS/네트워크/CSRF\|CSRF]]
+- [[CS/네트워크/JWT 인가 설정하기\|JWT 인가 설정하기]]
+- [[CS/네트워크/OAuth2 JWT\|OAuth2 JWT]]
+- [[CS/네트워크/RESTful API\|RESTful API]]
+- [[CS/네트워크/MVC패턴\|MVC패턴]]
 
 
 ## ▪️ JAVA
