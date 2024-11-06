@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/Web/res-tful-api/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/네트워크/res-tful-api/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 ## REST(Representational State Transfer)란?
