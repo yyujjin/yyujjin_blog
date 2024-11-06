@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/web/cors/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/네트워크/cors/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
