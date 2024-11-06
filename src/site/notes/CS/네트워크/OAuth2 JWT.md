@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/cs/web/o-auth2-jwt/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/cs/네트워크/o-auth2-jwt/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
