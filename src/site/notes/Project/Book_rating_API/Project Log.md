@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/book-rating-api/bookrating_log.md/","dgPassFrontmatter":true,"noteIcon":"","created":"2024-11-02T05:08:44.733+09:00","updated":"2024-11-05T19:56:48.559+09:00"}
+{"dg-publish":true,"permalink":"/project/book-rating-api/project-log/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
@@ -15,3 +15,10 @@
 	- [[Deployment/Docker/Database Migration\|Database Migration]]
 - 소스 코드 보안 유지하기
 	- [[Project/Book_rating_API/환경변수 설정하기\|환경변수 설정하기]]
+- CORS 설정하기
+	- [[Project/Book_rating_API/CORS 허용 설정하기\|CORS 허용 설정하기]]
+- JWT 설정하기
+	- [[Project/Book_rating_API/JWT 토큰 생성하기\|JWT 토큰 생성하기]]
+	- [[Project/Book_rating_API/JWT 토큰 검증 필터 설정하기\|JWT 토큰 검증 필터 설정하기]]
+	- 시큐리티에 적용한 필터 넣기[[Project/Book_rating_API/Spring security 필터 설정#^76601a\|Spring security 필터 설정#^76601a]]
+- 
