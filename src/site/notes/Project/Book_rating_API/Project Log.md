@@ -19,6 +19,8 @@
 	- [[Project/Book_rating_API/CORS 허용 설정하기\|CORS 허용 설정하기]]
 - JWT 설정하기
 	- [[Project/Book_rating_API/JWT 토큰 생성하기\|JWT 토큰 생성하기]]
+	- [[Project/Book_rating_API/JWT토큰 검증하기\|JWT토큰 검증하기]]
 	- [[Project/Book_rating_API/JWT 토큰 검증 필터 설정하기\|JWT 토큰 검증 필터 설정하기]]
 	- 시큐리티에 적용한 필터 넣기[[Project/Book_rating_API/Spring security 필터 설정#^76601a\|Spring security 필터 설정#^76601a]]
-- 
+- 로그인 불필요 경로에서 JWT 토큰 검사로 인한 에러 발생
+	- [[Project/Book_rating_API/JWT토큰 검증하기#^4cf6b1\|JWT토큰 검증하기#^4cf6b1]]
