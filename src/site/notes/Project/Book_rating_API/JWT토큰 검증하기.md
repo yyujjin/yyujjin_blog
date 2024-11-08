@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/book-rating-api/jwt/","dgPassFrontmatter":true,"noteIcon":""}
+{"dg-publish":true,"permalink":"/project/book-rating-api/jwt_토큰_검증하기/","dgPassFrontmatter":true,"noteIcon":""}
 ---
 
 
