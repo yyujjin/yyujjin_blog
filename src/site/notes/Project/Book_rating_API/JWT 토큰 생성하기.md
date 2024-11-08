@@ -14,7 +14,7 @@ String token = Jwts.builder()//JWT 생성 빌더를 호출하고, 사용자 정�
 	.claim("email", userSessionService.getUserEmail()) // 사용자 이메일
 	.claim("avatar", userSessionService.getAvatar()) // 사용자 아바타 이미지
 	.setIssuedAt(new Date()) // 토큰 생성 시간
-	.setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 만료 시간 (1일)
+	.setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 토큰 만료 시간 (1일)
 	.signWith(SignatureAlgorithm.HS256, jwtSecret.getBytes()) // 서명 알고리즘 및 비밀 키
 	.compact();
 
@@ -38,3 +38,18 @@ response.addCookie(jwtCookie); //생성된 쿠키를 응답에 추가
 	- HTTPS가 아닌 HTTP 요청에서는 JWT 쿠키가 전송되지 않기 때문에, HTTP 연결을 사용하는 경우 서버는 JWT 토큰을 확인할 수 없어 인증이 불가능하게 됨
 	- 즉, 토큰을 통한 인증이 필요한 경우, <u>반드시 HTTPS를 통해 통신해야 함</u>
 - jwtCookie.setPath("/") : ==모든 경로에서 사용하기 위해 설정==
+
+
+
+
+
+### ⏳ 쿠키 유효기간 설정의 이유 요약
+
+- **액세스 토큰**: 쿠키 유효기간을 짧게 설정하여, 보안 강화를 위해 사용합니다. 일반적으로 액세스 토큰은 자주 갱신되므로, 유출되더라도 피해를 줄일 수 있습니다.
+- **리프레시 토큰**: 쿠키 유효기간을 길게 설정하여, 사용자가 재로그인 없이 지속적으로 서비스를 사용할 수 있도록 합니다.
+📝 [[CS/네트워크/Access Token과 Refresh Token\|Access Token과 Refresh Token]]
+
+
+- ==단일 JWT 토큰을 사용하는 경우==  🙋‍♀️(나의 경우)
+	- 단일 JWT 토큰만 사용하는 경우에는 **쿠키와 토큰의 유효기간을 동일하게 설정**하는 것이 일반적입니다. 
+	- 이 경우 쿠키 유효기간은 단일 토큰의 만료 시간과 일치하게 설정되며, 쿠키와 토큰이 함께 만료됩니다.
