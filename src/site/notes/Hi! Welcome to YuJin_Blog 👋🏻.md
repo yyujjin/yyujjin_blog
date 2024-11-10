@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"","created":"2024-10-15T01:20:33.071+09:00","updated":"2024-11-06T20:15:21.348+09:00"}
+{"dg-home":true,"dg-publish":true,"permalink":"/hi-welcome-to-yu-jin-blog/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":""}
 ---
 
   
@@ -35,11 +35,11 @@
 - [[CS/네트워크/SMTP\|SMTP]]
 - [[CS/네트워크/CORS 정책\|CORS 정책]]
 - [[CS/네트워크/CSRF\|CSRF]]
-- [[CS/네트워크/JWT 인가 설정하기\|JWT 인가 설정하기]]
+- [[JWT 인가 설정하기\|JWT 인가 설정하기]]
 - [[CS/네트워크/OAuth2 JWT\|OAuth2 JWT]]
 - [[CS/네트워크/RESTful API\|RESTful API]]
 - [[CS/네트워크/MVC패턴\|MVC패턴]]
-
+- [[CS/네트워크 면접 대비\|네트워크 면접 대비]]
 
 ## ▪️ JAVA
 - [[CS/JAVA/오버라이딩과 오버로딩\|오버라이딩과 오버로딩]]
