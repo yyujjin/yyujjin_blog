@@ -27,7 +27,7 @@
 
 ## ▪️ 네트워크
 - [[CS/네트워크/HTTP\|HTTP]]
-- [[CS/네트워크/쿠키,세션,토큰\|쿠키,세션,토큰]]
+- [[CS/네트워크/쿠키,세션,토큰,캐시\|쿠키,세션,토큰,캐시]]
 - [[CS/네트워크/JWT\|JWT]]
 - [[CS/네트워크/Access Token과 Refresh Token\|Access Token과 Refresh Token]]
 - [[CS/네트워크/Webhook(웹훅)\|Webhook(웹훅)]]
@@ -39,7 +39,9 @@
 - [[CS/네트워크/OAuth2 JWT\|OAuth2 JWT]]
 - [[CS/네트워크/RESTful API\|RESTful API]]
 - [[CS/네트워크/MVC패턴\|MVC패턴]]
-- [[CS/네트워크 면접 대비\|네트워크 면접 대비]]
+-  [[CS/네트워크/DNS\|DNS]]
+- [[CS/네트워크/IP 주소\|IP 주소]]
+- [[CS/네트워크/네트워크 면접 대비\|네트워크 면접 대비]]
 
 ## ▪️ JAVA
 - [[CS/JAVA/오버라이딩과 오버로딩\|오버라이딩과 오버로딩]]
